@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+  <body>
+    <section class="wrapper">
+      <section class="unlock section">
+        <div class="container">
+          <div class="unlock_box">
+            <div class="unlock_box--closed">
+              <div></div>
+            </div>
+            <div class="unlock_box--title">
+              Unlock everything
+            </div>
+            <div class="unlock_box--price">
+              <div><span>save 67%</span> $49.99/year</div>
+              <div class="btn">
+                <a href="#">7-DAY FREE TRIAL</a>
+              </div>
+            </div>
+            <div class="unlock_box--price">
+              <div>
+                $12.99/month
+              </div>
+              <div class="btn">
+                <a href="#">JOIN</a>
+              </div>
+            </div>
+            <div class="unlock_box--list">
+              <ul>
+                <li>Access to all workout plans</li>
+                <li>Access to personal coaches</li>
+                <li>Access to yummy meal plans</li>
+                <li>Access to 1000+ mixes</li>
+              </ul>
+            </div>
+            <div class="unlock_box--scroll">
+            <div class="filter"></div>
+              <div class="ascent">
+                Recurring billing. Cancel anytime. Terms & Conditions
+                Privicy Policy The subscription will automatically renew
+                unless auto-renew is turned off at least 24 hours before the
+                end of the current period. You can go to your iTunes Account
+                settings to manage your subscription and turn off
+                auto-renew. Your iTunes Account will be charged when the
+                purchase is confirmed. If you subscribe before your free
+                trial ends, the rest of your free trial will be forfeited as
+                soon as your purchase is confirmed. <br>
+                <a href="#">Privacy policy</a> <a href="#">Terms of us</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"
+    ></script>
+    <script>
+    $(window).scroll (function(){
+      if($(this).scrollTop () > 100){
+        $('.filter').fadeIn ();
+      }else{
+        $('.filter').fadeOut ();
+      }
+    });
+      </script>
+    <script>
+      $(window).scroll (function(){
+        if($(this).scrollTop () > 100){
+          $('.ascent').fadeIn ();
+        }else{
+          $('.ascent').fadeOut ();
+        }
+      });
+        </script>
+  </body>
+</html>
